@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrie Leslie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="age-verification-popup">
+        <div id="age-verification-popup-content">
+            <h2>Are you 21 or older?</h2>
+            <button onclick="verifyAge(true)">Yes</button>
+            <button onclick="verifyAge(false)">No</button>
+        </div>
+    </div>
+    <header>
+        <h1>Carrie Leslie</h1>
+        <!-- Add photos of yourself here -->
+        <img src="your_photo1.jpg" alt="Your Photo 1">
+        <img src="your_photo2.jpg" alt="Your Photo 2">
+    </header>
+
+    <section id="rates">
+        <h2>Rates</h2>
+        <!-- Add your rates information here -->
+        <ol> NSFW Dates
+            <li>$150 for 15 Minutes</li>
+            <li>$200 for 30 Minutes</li>
+            <li>$300 for 60 Minutes</li>
+            <li>$400 for 120 Minutes</li>
+            <li>$500 for 180 Minutes</li>
+        </ol>
+        <ol> SFW Dates
+            <li>$50 for 15 Minutes</li>
+            <li>$100 for 30 Minutes</li>
+            <li>$200 for 60 Minutes</li>
+            <li>$300 for 120 Minutes</li>
+            <li>$400 for 180 Minutes</li>
+        </ol>
+        <ol> Virtual Pricing
+            <li>$20 for 15 minute GFE Calls (incl. 2 real time selfies)</li>
+            <li>$25 for 30 minute GFE Calls (incl. 2 real time selfies)</li>
+            <li>$20 for 15 minute GFE Calls (incl. 2 real time selfies)</li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Add links to your social media accounts -->
+        <a href="https://www.facebook.com/yourpage"><img src="facebook_logo.png" alt="Facebook"></a>
+        <a href="https://twitter.com/yourpage"><img src="twitter_logo.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/yourpage"><img src="instagram_logo.png" alt="Instagram"></a>
+
+        <!-- Add a form for contacting you -->
+        <form action="your_contact_script.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <!-- Add footer content here -->
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script>
+        // Function to show the age verification popup
+        function showAgeVerificationPopup() {
+            document.getElementById("age-verification-popup").style.display = "block";
+        }
+
+        // Function to verify age and hide the popup 
+        function verifyAge(over21) {
+            if (over21) {
+                document.getElementById("age-verification-popup").style.display = "none";
+            } else {
+                // Redirect to a page informing the user they must be 21+
+                window.location.href = "under21.html";
+            }
+        }
+
+        // Show the age verification popup when the page loads
+        window.onload = function() {
+            showAgeVerificationPopup();
+        };
+    </script>
+</body>
+</html>
