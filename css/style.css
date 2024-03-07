@@ -2,9 +2,9 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(166, 45, 114);
+    background-color: rgb(196, 55, 55);
   }
-  
+
   #age-verification-popup {
     display: none;
     position: fixed;
@@ -21,13 +21,17 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(162, 43, 198);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2em;
+    border-radius: 4em;
     text-align: center;
+    font-size: large;
+  }
+  button { 
+    font-size: large;
   }
   /* Hero Image */
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/carrieleslie117.github.io/images/C2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/C2.png");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +75,7 @@ body, html {
 
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
+  border: 1px;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -81,22 +85,24 @@ body, html {
 .price .header {
   background-color: #000000;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .price li {
   border-bottom: 1px solid #d38686;
   padding: 20px;
   text-align: center;
+  font-style: italic;
 }
 
 .price .grey {
-  background-color: #722626;
+  background-color: #e47d41;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .price .subheader {
-  background-color: #32656a;
+  background-color: #df3838;
   font-size: 25px;
 }
 
@@ -104,6 +110,8 @@ body, html {
     display: flex;
     font-size: 24px;
 }
+
+/* Contact Me */
 
 .container-contact {
     border: none;
@@ -127,12 +135,15 @@ form {
 
 fieldset {
   padding: 30px;
+  font-weight: bold;
+  border: solid plum;
 }
 
 input,
 textarea,
 button {
   width: 100%;
+  background-color: rgb(241, 230, 230);
 }
 
 .main-footer {
