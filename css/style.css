@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(101, 87, 204);
   }
 
@@ -91,20 +91,20 @@ body, html {
 }
 
 .price li {
-  border-bottom: 1px solid #d38686;
+  border-bottom: 1px solid #dbe67e;
   padding: 20px;
   text-align: center;
   font-style: italic;
 }
 
 .price .grey {
-  background-color: #e47d41;
+  background-color: #d4c88b;
   font-size: 25px;
   font-weight: bold;
 }
 
 .price .subheader {
-  background-color: #df3838;
+  background-color: #dbe67c;
   font-size: 25px;
 }
 
